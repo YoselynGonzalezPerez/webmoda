@@ -1,0 +1,241 @@
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  
+  
+  
+  /* Estilos para el contenedor */
+  .container {
+    width: 100%;
+    background-color: #000000;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+    position: fixed; /* Fija la posición del menú */
+  }
+  /* Estilos para el menú de navegación */
+  .menu {
+    float: right;
+
+  }
+  .menu a {
+    display: inline-block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+
+  }
+  .menu a:hover {
+    background-color: #B7950B;
+  }
+  /* Estilos para el logo */
+  .logo {
+    float: left;
+  }
+  .logo img {
+    height: 80px;
+    width: auto;
+  }
+
+  /* Estilos generales */
+  body {
+    margin: 0;
+    font-family: blein cursive;, sans-serif;
+  }
+
+  /* Estilos para el menú */
+  .menu {
+    font-size: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu .logo img {
+    height: 77px;
+  }
+
+  .menu-text {
+  font-size: 35px; /* Ajusta el tamaño del texto */
+  margin-left: 90px; /* Ajusta el margen izquierdo para separarlo del logo */
+  margin-top: -50px; /* Ajusta el margen superior para subir el texto */
+}
+  /* Estilos para el contenido */
+  .content {
+    padding-top: 50px; /* Para evitar que el contenido se superponga con el menú fijo */
+  }
+
+  /* Estilos para los productos */
+    .featured-products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px 0; /* Agregamos espacio superior e inferior */
+    }
+
+    .featured-products h2 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px; /* Espacio inferior */
+    }
+
+    .product {
+      width: calc(25% - 20px); /* Para que haya cuatro productos por fila */
+      /* Calculamos el ancho restando el espacio entre los productos */
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product h3 {
+      margin-top: 10px;
+    }
+  /* Estilos para la sección de ofertas */
+    .offers {
+      padding: 20px;
+      background-color: #000;
+      color: #fff; /* Color del texto */
+      display: flex;
+      align-items: center;
+    }
+
+    .offers img {
+      max-width: 300px;
+      margin-right: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .offers div {
+      flex: 1;
+      text-align: justify;
+    }
+
+    .offers h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .offers p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    
+     /* Estilos para el contenido y el formulario */
+    .content {
+      padding: 20px;
+      background-color: #fff;
+      color: #fff;
+      text-align: center;
+    }
+
+    .content h2 {
+      color: #000; /* Color blanco */
+    }
+
+    .content p {
+      color: #000; /* Color blanco */
+    }
+
+    .content form {
+      margin: 0 auto; /* Centrar el formulario */
+      max-width: 400px; /* Ancho máximo del formulario */
+    }
+
+    .content input[type="text"],
+    .content input[type="email"],
+    .content textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    .content input[type="submit"] {
+      background-color: #B7950B; /* Color dorado */
+      color: #fff; /* Color negro */
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .content input[type="submit"]:hover {
+      background-color: #e6b800; /* Color dorado más oscuro al pasar el cursor */
+    }
+
+      /* Estilos para el pie de página */
+    #footer {
+      background-color: #000000; /* Color de fondo */
+      color: #fff; /* Color de texto */
+      text-align: CENTER;
+      padding: 20px;
+    }
+
+    #footer p {
+      margin-bottom: 10px; /* Espacio entre los párrafos */
+    }
+
+    #footer a {
+      color: #fff; /* Color de los enlaces */
+      text-decoration: none;
+      margin: 0 10px; /* Espaciado entre los enlaces */
+    }
+
+    #footer iframe {
+      margin-top: 20px; /* Espacio arriba del mapa */
+      width: 100%; /* Ancho completo */
+      max-width: 600px; /* Ancho máximo */
+      height: 300px; /* Altura fija */
+      border: none; /* Sin borde */
+    }
+
+   .social-link {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+}
+
+.social-icon {
+    width: 100px; /* Tamaño personalizable */
+    height: 100px; /* Tamaño personalizable */
+    border-radius: 50%; /* Hace que los iconos sean circulares */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animación de transición */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del icono al pasar el ratón sobre él */
+    animation: rain-gold 0.5s infinite alternate; /* Aplica la animación de lluvia dorada */
+}
+
+@keyframes rain-gold {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.7), 
+                    0 0 40px rgba(255, 215, 0, 0.5),
+                    0 0 60px rgba(255, 215, 0, 0.3);
+    }
+}
+
